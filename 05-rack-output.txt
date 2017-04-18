@@ -1,0 +1,11 @@
+::1 - - [16/Apr/2017:20:32:36 -0400] "HEAD / HTTP/1.1" 200 - 0.0004
+[2017-04-16 20:32:36] ERROR Rack::Lint::LintError: Response body was given for HEAD request, but should be empty
+	gems/rack-2.0.1/lib/rack/lint.rb:20:in `assert'
+	gems/rack-2.0.1/lib/rack/lint.rb:688:in `verify_content_length'
+	gems/rack-2.0.1/lib/rack/lint.rb:716:in `each'
+	gems/rack-2.0.1/lib/rack/body_proxy.rb:36:in `each'
+	gems/rack-2.0.1/lib/rack/chunked.rb:23:in `each'
+	gems/rack-2.0.1/lib/rack/handler/webrick.rb:110:in `service'
+	ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+	ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+	ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'

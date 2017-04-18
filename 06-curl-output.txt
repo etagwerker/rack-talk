@@ -1,0 +1,16 @@
+$ rackup
+
+Rack::Lint::LintError: Status must be >=100 seen as integer
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/lint.rb:20:in `assert'
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/lint.rb:620:in `check_status'
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/lint.rb:51:in `_call'
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/lint.rb:37:in `call'
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/show_exceptions.rb:23:in `call'
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/common_logger.rb:33:in `call'
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/chunked.rb:54:in `call'
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/content_length.rb:15:in `call'
+	/Users/etagwerker/.rvm/gems/ruby-2.3.3@rack-talk/gems/rack-2.0.1/lib/rack/handler/webrick.rb:86:in `service'
+	/Users/etagwerker/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+	/Users/etagwerker/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+	/Users/etagwerker/.rvm/rubies/ruby-2.3.3/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+127.0.0.1 - - [16/Apr/2017:20:48:25 -0400] "GET / HTTP/1.1" 500 43757 0.0087
